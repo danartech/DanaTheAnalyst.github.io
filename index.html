@@ -6,22 +6,22 @@
 -->
 <html>
 <head>
-    <title>Dana The Analyst</title>
+    <title>Dana Robinson</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-        .contact-box {
+        .contact-box, .skills-certifications {
             border: 1px solid #ddd;
             padding: 20px;
             margin: 20px 0;
             background: #f9f9f9;
         }
-        .contact-box h3 {
+        .contact-box h3, .skills-certifications h2 {
             margin-bottom: 10px;
         }
-        .contact-box p {
+        .contact-box p, .skills-certifications ul {
             margin: 5px 0;
         }
         .skills-certifications ul {
@@ -31,13 +31,25 @@
         .skills-certifications li {
             margin: 5px 0;
         }
+        .skills-certifications-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skills-certifications {
+            flex: 1;
+            min-width: 200px; /* Adjust based on your design */
+        }
         @media only screen and (max-width: 600px) {
             #intro {
                 padding-top: 20px;
             }
-            .contact-box {
+            .contact-box, .skills-certifications {
                 padding: 10px;
                 margin: 10px 0;
+            }
+            .skills-certifications-container {
+                flex-direction: column;
             }
         }
     </style>
@@ -49,7 +61,7 @@
 
         <!-- Intro -->
         <div id="intro">
-            <h1>Dana The Analyst Portfolio <br />
+            <h1>Dana Robinson's Portfolio <br />
             </h1>
             <p>Data Analyst skilled in Excel, SQL, Tableau, Python, Cloud Technologies, and Cybersecurity. <a href="https://github.com/danartech">@danartech</a></p>
             <ul class="actions">
@@ -59,15 +71,14 @@
 
         <!-- Header -->
         <header id="header">
-            <a href="index.html" class="logo">Dana The Analyst</a>
+            <a href="index.html" class="logo">Welcome To My Portfolio</a>
         </header>
 
         <!-- Nav -->
         <nav id="nav">
             <ul class="links">
                 <li class="active"><a href="index.html">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#skills-certifications-container">Skills & Certifications</a></li>
             </ul>
             <ul class="icons">
                 <li><a href="https://www.linkedin.com/in/dana-robinson-acct/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -134,35 +145,35 @@
                 </article>
             </section>
 
-            <!-- Skills -->
-            <section id="skills" class="skills-certifications">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Excel</li>
-                    <li>SQL</li>
-                    <li>Tableau</li>
-                    <li>Python</li>
-                    <li>Cloud Technologies</li>
-                    <li>Cybersecurity</li>
-                    <li>Data Cleaning</li>
-                    <li>Data Exploration</li>
-                    <li>Interactive Dashboards</li>
-                </ul>
-            </section>
-
-            <!-- Certifications -->
-            <section id="certifications" class="skills-certifications">
-                <h2>Certifications</h2>
-                <ul>
-                    <li>CompTIA Security+</li>
-                    <li>AZ-500: Microsoft Azure Security Technologies</li>
-                    <li>Google IT Support Professional Certificate</li>
-                    <li>Google Cybersecurity Professional Certificate</li>
-                    <li>CompTIA A+</li>
-                    <li>CompTIA Network+</li>
-                    <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
-                    <li>AWS Certified Cloud Practitioner</li>
-                </ul>
+            <!-- Skills and Certifications -->
+            <section id="skills-certifications-container" class="skills-certifications-container">
+                <div class="skills-certifications">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Excel</li>
+                        <li>SQL</li>
+                        <li>Tableau</li>
+                        <li>Python</li>
+                        <li>Cloud Technologies</li>
+                        <li>Cybersecurity</li>
+                        <li>Data Cleaning</li>
+                        <li>Data Exploration</li>
+                        <li>Interactive Dashboards</li>
+                    </ul>
+                </div>
+                <div class="skills-certifications">
+                    <h2>Certifications</h2>
+                    <ul>
+                        <li>CompTIA Security+</li>
+                        <li>AZ-500: Microsoft Azure Security Technologies</li>
+                        <li>Google IT Support Professional Certificate</li>
+                        <li>Google Cybersecurity Professional Certificate</li>
+                        <li>CompTIA A+</li>
+                        <li>CompTIA Network+</li>
+                        <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+                        <li>AWS Certified Cloud Practitioner</li>
+                    </ul>
+                </div>
             </section>
 
             <!-- Contact -->
@@ -180,13 +191,6 @@
                 </ul>
             </section>
         </div>
-
-        <!-- Copyright -->
-        <div id="copyright">
-            <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-        </div>
-
-    </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>

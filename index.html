@@ -40,6 +40,15 @@
             flex: 1;
             min-width: 200px; /* Adjust based on your design */
         }
+        .certification-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .certification-item img {
+            width: 100px;
+        }
         @media only screen and (max-width: 600px) {
             #intro {
                 padding-top: 20px;
@@ -63,7 +72,8 @@
         <div id="intro">
             <h1>Dana Robinson's Portfolio <br />
             </h1>
-            <p>Data Analyst skilled in Excel, SQL, Tableau, Python, Cloud Technologies, and Cybersecurity. <a href="https://github.com/danartech">@danartech</a></p>
+            <p>Data Analyst skilled in Excel, SQL, Tableau, Python, Cloud Technologies, and Cybersecurity. 
+                <a href="https://github.com/danartech">@danartech</a></p>
             <ul class="actions">
                 <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
             </ul>
@@ -71,7 +81,7 @@
 
         <!-- Header -->
         <header id="header">
-            <a href="index.html" class="logo">Welcome To My Portfolio</a>
+            <a href="index.html" class="logo">My Portfolio</a>
         </header>
 
         <!-- Nav -->
@@ -163,16 +173,76 @@
                 </div>
                 <div class="skills-certifications">
                     <h2>Certifications</h2>
-                    <ul>
-                        <li>CompTIA Security+</li>
-                        <li>AZ-500: Microsoft Azure Security Technologies</li>
-                        <li>Google IT Support Professional Certificate</li>
-                        <li>Google Cybersecurity Professional Certificate</li>
-                        <li>CompTIA A+</li>
-                        <li>CompTIA Network+</li>
-                        <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
-                        <li>AWS Certified Cloud Practitioner</li>
-                    </ul>
+                    <div class="certification-item">
+                        <img src="https://i.imgur.com/9YtURZR.png" alt="CompTIA Security+">
+                        <div>
+                            <h3>🔐 CompTIA Security+ ce Certification</h3>
+                            <a href="https://www.credly.com/badges/ab411b1b-2f15-4161-8340-78d1071d077c/public_url">CompTIA Security+ ce Certification</a>
+                        </div>
+                    </div>
+                    <div class="certification-item">
+                        <img src="https://i.imgur.com/KQNAdOm.png" alt="CompTIA Network+">
+                        <div>
+                            <h3>🌐 CompTIA Network+ ce Certification</h3>
+                            <a href="https://www.credly.com/badges/e49b2a76-d09c-4e72-8f7f-4839f9d6bc8f/public_url">CompTIA Network+ ce Certification</a>
+                        </div>
+                    </div>
+                    <div class="certification-item">
+                        <img src="https://i.imgur.com/a1N480G.png" alt="CompTIA A+">
+                        <div>
+                            <h3>💻 CompTIA A+ ce Certification</h3>
+                            <a href="https://www.credly.com/badges/d273c5b6-a92a-481b-9bfc-fdd1a81cbdc9/public_url">CompTIA A+ ce Certification</a>
+                        </div>
+                    </div>
+                    <div class="certification-item">
+                        <img src="https://i.imgur.com/GsL3t5t.png" alt="AWS Certified Cloud Practitioner">
+                        <div>
+                            <h3>☁️ AWS Certified Cloud Practitioner</h3>
+                            <a href="https://www.credly.com/badges/0d41c123-b789-4582-9d4e-fd317f2bbb2e/public_url">AWS Certified Cloud Practitioner</a>
+                        </div>
+                    </div>
+                    <div class="certification-item">
+                        <img src="https://i.imgur.com/hOW7rTQ.png" alt="Microsoft Certified: Azure Fundamentals">
+                        <div>
+                            <h3>📘 Microsoft Certified: Azure Fundamentals</h3>
+                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/DanaRobinson-5540/ADC24F83CC636771?sharingId=D08918252DFABD21">Microsoft Certified: Azure Fundamentals</a>
+                        </div>
+                    </div>
+                    <div class="certification-item">
+                        <img src="https://i.imgur.com/lctxOq1.png" alt="Google Data Analytics">
+                        <div>
+                            <h3>📊 Google Data Analytics Professional Certificate</h3>
+                            <a href="https://coursera.org/share/4ed75de36411d7d5c0389e2d61a2c2ff">Google Data Analytics Professional Certificate</a>
+                        </div>
+                    </div>
+                    <div class="certification-item">
+                        <img src="https://i.imgur.com/FAkm4Zi.png" alt="Google Cybersecurity Certificate">
+                        <div>
+                            <h3>🔒 Google Cybersecurity Certificate</h3>
+                            <a href="https://www.credly.com/badges/68cc3a44-5686-42d8-8745-81de1fc071e1/public_url">Google Cybersecurity Certificate</a>
+                        </div>
+                    </div>
+                    <div class="certification-item">
+                        <img src="https://i.imgur.com/t7zm1cY.png" alt="Google IT Support Professional Certificate">
+                        <div>
+                            <h3>🛠️ Google IT Support Professional Certificate</h3>
+                            <a href="https://www.credly.com/badges/7f5c8e1d-7c71-4b53-94a1-8440218cfb97/public_url">Google IT Support Professional Certificate</a>
+                        </div>
+                    </div>
+                    <div class="certification-item">
+                        <img src="https://i.imgur.com/xiEJ7PF.png" alt="Python for Data Science and AI">
+                        <div>
+                            <h3>🐍 Python for Data Science and AI</h3>
+                            <a href="https://www.credly.com/badges/4f0fcef8-75d4-4114-9ccc-20a10d21f494/public_url">Python for Data Science and AI</a>
+                        </div>
+                    </div>
+                    <div class="certification-item">
+                        <img src="https://i.imgur.com/hYLpafU.png" alt="DevOps Essentials">
+                        <div>
+                            <h3>🚀 DevOps Essentials</h3>
+                            <a href="https://www.credly.com/badges/f69eaab3-761a-47bd-85ed-dde1ea5aa652/public_url">DevOps Essentials</a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -191,6 +261,13 @@
                 </ul>
             </section>
         </div>
+
+        <!-- Copyright -->
+        <div id="copyright">
+            <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+        </div>
+
+    </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
